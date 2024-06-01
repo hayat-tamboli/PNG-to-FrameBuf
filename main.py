@@ -5,7 +5,7 @@ import print_frame_buffer
 
 def main():
     # Step 1: Open the 32-bit PNG image
-    input_image_path = "player_2_your_numbers_are.png"
+    input_image_path = "sudden_death_selected.png"
     img = Image.open(input_image_path)
 
     # Step 2: Convert the image to grayscale
