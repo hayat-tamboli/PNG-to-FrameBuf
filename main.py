@@ -5,7 +5,7 @@ import print_frame_buffer
 
 def main():
     # Step 1: Open the 32-bit PNG image
-    input_image_path = "ChooseGameType.png"
+    input_image_path = "player_2_your_numbers_are.png"
     img = Image.open(input_image_path)
 
     # Step 2: Convert the image to grayscale
@@ -14,7 +14,7 @@ def main():
     # Step 3: Apply thresholding to binarize the image
     # Here, we use a threshold value of 128 for simplicity.
     # This value can be adjusted based on the specific needs.
-    threshold_value = 130
+    threshold_value = 165
     binary_img = grayscale_img.point(lambda x: 255 if x > threshold_value else 0, '1')
 
     # Step 4: Save the image in 1-bit per pixel format
